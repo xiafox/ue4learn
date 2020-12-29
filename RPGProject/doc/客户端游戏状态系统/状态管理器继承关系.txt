@@ -1,0 +1,11 @@
+BaseStatus
+		InWroldStatus
+		LoginStatus
+		SelectRoleStatus
+		CreateRoleStatus
+		LoadingBaseStatus	( isLevelLoadFinished )
+			InWorldLoadingStatus
+			TeleportLoadingStatus
+			LoginLoadingStatus
+			SelectRoleLoadingStatus
+			CreateRoleLoadingStatus

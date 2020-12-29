@@ -1,0 +1,12 @@
+<root>
+	<Interfaces>
+		<Interface>	MgrEntity	</Interface>
+	</Interfaces>
+	<Properties>
+	</Properties>
+	<BaseMethods>
+		<onMgrInitCompleted>
+			<Arg>	UNICODE	</Arg>
+		</onMgrInitCompleted>
+	</BaseMethods>
+</root>

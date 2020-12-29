@@ -1,0 +1,30 @@
+﻿<root>
+	
+
+	<Properties>
+		<HP>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	100	</Default>
+			<Persistent>	true	</Persistent>
+		</HP>
+		<HP_Max>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	100	</Default>
+			<Persistent>	true	</Persistent>
+		</HP_Max>
+		<MP>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	100	</Default>
+			<Persistent>	true	</Persistent>
+		</MP>
+		<MP_Max>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	100	</Default>
+			<Persistent>	true	</Persistent>
+		</MP_Max>
+	</Properties>
+</root>

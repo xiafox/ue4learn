@@ -1,0 +1,34 @@
+<root>
+	
+
+	<Properties>
+		<state>
+			<Type>	INT16	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	1	</Default>
+			<Persistent>	true	</Persistent>
+		</state>
+
+		<effectState>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	0	</Default>
+		</effectState>
+		<effectCounter>
+			<Type>	ARRAY_INT32	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+			<Default>	[]	</Default>
+		</effectCounter>
+
+		<actForbid>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	0	</Default>
+		</actForbid>
+		<actCounter>
+			<Type>	ARRAY_INT32	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+			<Default>	[]	</Default>
+		</actCounter>
+	</Properties>
+</root>

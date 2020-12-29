@@ -1,0 +1,131 @@
+<root>
+	<BOOL>				UINT8		</BOOL>
+	<DBID>				UINT64		</DBID>
+	<UID>				UINT64		</UID>
+	<SCRIPT_ID>			UNICODE		</SCRIPT_ID>
+	<SPACE_ID>			UINT32		</SPACE_ID>
+	<POSITION>			VECTOR3		</POSITION>
+	<DIRECTION>			VECTOR3		</DIRECTION>
+	<ARRAY_INT32>		ARRAY <of> INT32 </of>		</ARRAY_INT32>
+	<ARRAY_UNICODE>		ARRAY <of> UNICODE </of>	</ARRAY_UNICODE>
+	<ARRAY_INT16>		ARRAY <of> INT16 </of>		</ARRAY_INT16>
+	<BASE_ENTITYCALL>		ENTITYCALL		</BASE_ENTITYCALL>
+	<CELL_ENTITYCALL>		ENTITYCALL		</CELL_ENTITYCALL>
+	<PYTHON_DICT>		PYTHON		</PYTHON_DICT>
+	<PYTHON_TUPLE>		PYTHON		</PYTHON_TUPLE>
+	<PYTHON_LIST>		PYTHON		</PYTHON_LIST>
+	
+	<!--字典 key:int, value:int-->
+	<KINT_VINT_ITEM>FIXED_DICT
+		<Properties>
+			<key>
+				<Type>INT32</Type>
+			</key>
+			<value>
+				<Type>INT32</Type>
+			</value>
+		</Properties>
+	</KINT_VINT_ITEM>
+	<DICT_INT_INT>FIXED_DICT
+		<implementedBy>	DictStruct.g_dictIntInt	</implementedBy>
+		<Properties>
+			<dictData>
+				<Type>	ARRAY<of> KINT_VINT_ITEM </of>	</Type>
+			</dictData>
+		</Properties>
+	</DICT_INT_INT>
+	<!--字典 key:str, value:str-->
+	<KSTR_VSTR_ITEM>FIXED_DICT
+		<Properties>
+			<key>
+				<Type>STRING</Type>
+			</key>
+			<value>
+				<Type>STRING</Type>
+			</value>
+		</Properties>
+	</KSTR_VSTR_ITEM>
+	<DICT_STR_STR>FIXED_DICT
+		<implementedBy>	DictStruct.g_dictStrStr	</implementedBy>
+		<Properties>
+			<dictData>
+				<Type>	ARRAY<of> KSTR_VSTR_ITEM </of>	</Type>
+			</dictData>
+		</Properties>
+	</DICT_STR_STR>
+	<!--字典 key:str, value:int-->
+	<KSTR_VINT_ITEM>FIXED_DICT
+		<Properties>
+			<key>
+				<Type>STRING</Type>
+			</key>
+			<value>
+				<Type>INT32</Type>
+			</value>
+		</Properties>
+	</KSTR_VINT_ITEM>
+	<DICT_STR_INT>FIXED_DICT
+		<implementedBy>	DictStruct.g_dictStrInt	</implementedBy>
+		<Properties>
+			<dictData>
+				<Type>	ARRAY<of> KSTR_VINT_ITEM </of>	</Type>
+			</dictData>
+		</Properties>
+	</DICT_STR_INT>
+	<!--字典 key:str, value:int list-->
+	<KSTR_VINTLIST_ITEM>FIXED_DICT
+		<Properties>
+			<key>
+				<Type>STRING</Type>
+			</key>
+			<value>
+				<Type>ARRAY<of> INT32 </of></Type>
+			</value>
+		</Properties>
+	</KSTR_VINTLIST_ITEM>
+	<DICT_STR_INTLSIT>FIXED_DICT
+		<implementedBy>	DictStruct.g_dictStrIntList	</implementedBy>
+		<Properties>
+			<dictData>
+				<Type>	ARRAY<of> KSTR_VINTLIST_ITEM </of>	</Type>
+			</dictData>
+		</Properties>
+	</DICT_STR_INTLSIT>
+	<!--字典 key:int, value:str-->
+	<KINT_VSTR_ITEM>FIXED_DICT
+		<Properties>
+			<key>
+				<Type>INT32</Type>
+			</key>
+			<value>
+				<Type>STRING</Type>
+			</value>
+		</Properties>
+	</KINT_VSTR_ITEM>
+	<DICT_INT_STR>FIXED_DICT
+		<implementedBy>	DictStruct.g_dictIntStr	</implementedBy>
+		<Properties>
+			<dictData>
+				<Type>	ARRAY<of> KINT_VSTR_ITEM </of>	</Type>
+			</dictData>
+		</Properties>
+	</DICT_INT_STR>
+	
+	<ROLEINFO> FIXED_DICT
+		<Properties>
+			<dbid>				<Type> DBID		</Type> </dbid>
+			<playerName>		<Type> UNICODE		</Type> </playerName>
+			<camp>				<Type> INT32		</Type> </camp>
+			<gender>			<Type> INT32		</Type> </gender>
+			<profession>		<Type> INT32		</Type> </profession>
+		</Properties>
+	</ROLEINFO>
+
+	<ROLEINFO_T> FIXED_DICT
+		<Properties>
+			<infos>     <Type> ARRAY <of> ROLEINFO </of> </Type> </infos>      <!-- 动态扩展参数（json） -->
+		</Properties>
+	</ROLEINFO_T>
+	
+	
+</root>

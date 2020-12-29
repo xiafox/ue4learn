@@ -1,0 +1,9 @@
+<root>
+	
+	<Interfaces>
+		<Interface> 	NPCBaseEntity	</Interface>
+	</Interfaces>
+
+	<Properties>
+	</Properties>
+</root>

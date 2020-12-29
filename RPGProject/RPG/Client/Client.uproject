@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "24c9f2ad948d565929cbe60c0b85bcd8b0eab165",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Client",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "KBEngine",
+			"Enabled": true
+		}
+	]
+}

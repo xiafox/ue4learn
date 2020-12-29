@@ -1,0 +1,66 @@
+<root>
+	<Parent>
+	</Parent>
+
+	<Properties>
+	</Properties>
+
+	<ClientMethods>
+		<CLIENT_testInt>
+			<Arg>	INT8	</Arg>	
+			<Arg>	INT16	</Arg>	
+			<Arg>	INT32	</Arg>	
+			<Arg>	INT64	</Arg>	
+		</CLIENT_testInt>
+		<CLIENT_testUInt>
+			<Arg>	UINT8	</Arg>	
+			<Arg>	UINT16	</Arg>	
+			<Arg>	UINT32	</Arg>	
+			<Arg>	UINT64	</Arg>	
+		</CLIENT_testUInt>
+		<CLIENT_testFloat>
+			<Arg>	FLOAT	</Arg>	
+			<Arg>	FLOAT	</Arg>	
+			<Arg>	FLOAT	</Arg>	
+		</CLIENT_testFloat>
+		<CLIENT_testStr>
+			<Arg>	STRING	</Arg>	
+			<Arg>	UNICODE	</Arg>	
+		</CLIENT_testStr> 
+		<CLIENT_testListInt>
+			<Arg>	ARRAY_INT32	</Arg>	
+		</CLIENT_testListInt> 
+		<CLIENT_testListUInt>
+			<Arg>	ARRAY_INT16	</Arg>	
+		</CLIENT_testListUInt> 
+		<Client_testListStr>
+			<Arg>	ARRAY_UNICODE	</Arg>	
+		</Client_testListStr> 
+	</ClientMethods>
+
+	<CellMethods>
+		<CELL_SetModelPart>
+			<Exposed/>
+			<Arg>	INT32	</Arg>	
+			<Arg>	STRING	</Arg>	
+		</CELL_SetModelPart>
+		<CELL_SetModel>
+			<Exposed/>
+		</CELL_SetModel>
+		<CELL_SetModelExt>
+			<Exposed/>
+			<Arg>	INT32	</Arg>	
+		</CELL_SetModelExt>
+
+		<CELL_SetIntAttr>
+			<Exposed/>
+			<Arg>	STRING	</Arg>	
+			<Arg>	INT32	</Arg>	
+		</CELL_SetIntAttr>
+		<CELL_SetStrAttr>
+			<Exposed/>
+			<Arg>	STRING	</Arg>	
+			<Arg>	STRING	</Arg>	
+		</CELL_SetStrAttr>
+	</CellMethods>
+</root>

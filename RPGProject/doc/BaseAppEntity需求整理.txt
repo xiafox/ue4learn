@@ -1,0 +1,27 @@
+BaseAppEntity:
+	作用：
+		1.通过在每个BaseApp存储其他BaspApp的本地创建的一个Base对象的mailbox，来实现后续各种需要跨BaseApp交互的功能。
+		2.通过在每个BaseApp中保存本BaseApp上的所有玩家的引用，来实现广播给所有玩家，或者专门通过玩家名字和某个玩家通信。
+	
+	状态：
+		无
+
+	流程：
+		注册BaseAppEntity，可以被全局访问。
+		注销BaseAppEntity，从全局中移除。
+		注册本地玩家到所在的BaseAppEntity
+		从所在的BaseAppEntity中注销本地玩家
+
+	数据：
+		0.本BaseApp上的BaseAppEntity注册为本BaseApp的全局数据
+		1.所有BaseAppEntity的引用（对于自身就是entity，对于其他BaseAppEntity则是mailbox）
+		2.所有本BaseApp上的玩家的entity。
+
+
+
+
+----------------------------------------------------------------
+在baseApp编程可以获得（或通知）：
+	当前BaseApp 的 BaseAppEntity MailBox。
+	第一个 BaseApp 的 BaseAppEntity MailBox。
+	所有BaseApp 的 BaseAppEntity MailBox。

@@ -1,0 +1,13 @@
+<root>
+	<Interfaces>
+		<Interface> 	GameEntity	</Interface>
+	</Interfaces>
+	<Properties>
+	</Properties>
+
+	<BaseMethods>
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+</root>

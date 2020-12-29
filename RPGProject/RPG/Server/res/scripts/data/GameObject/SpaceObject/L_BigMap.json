@@ -1,0 +1,10 @@
+﻿{
+"EntityType"	: "SpaceMultiLine",
+"DomainType"	: "SpaceDomainMultiLine",
+"EntityScript"	: "SpaceMultiLine",
+"scriptID"	: "L_BigMap",
+"spaceType"	: "SPACE_TYPE_MULTILINE",
+"SpawnFile"	: "",
+"NavmeshPath"	: "",
+"belongType"	: "0"
+}

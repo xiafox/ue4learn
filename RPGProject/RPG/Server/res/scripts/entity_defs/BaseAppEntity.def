@@ -1,0 +1,19 @@
+<root>
+	<Properties>
+	</Properties>
+	<BaseMethods>
+		<doFirstStartBaseAppEntityRegister>
+			<Arg>	ENTITYCALL				</Arg>
+		</doFirstStartBaseAppEntityRegister>
+		<doRegisterBaseAppEntity>
+			<Arg>	ARRAY <of> ENTITYCALL </of>	</Arg>
+		</doRegisterBaseAppEntity>
+		<registerPlayer>
+			<Arg>	UNICODE					</Arg>
+			<Arg>	ENTITYCALL				</Arg>
+		</registerPlayer>
+		<unregisterPlayer>
+			<Arg>	UNICODE					</Arg>
+		</unregisterPlayer>
+	</BaseMethods>
+</root>

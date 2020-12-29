@@ -1,0 +1,47 @@
+﻿<root>
+	<Interfaces>
+		<Interface> 	ServerEntity	</Interface>
+	</Interfaces>
+
+	<Properties>
+		<modelParts>
+			<Type>	DICT_INT_STR	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	{}	</Default>
+			<Persistent>	true	</Persistent>
+		</modelParts>
+		<modelExtParts>
+			<Type>	DICT_INT_STR	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	{}	</Default>
+			<Persistent>	true	</Persistent>
+		</modelExtParts>
+
+		<modelScale>
+			<Type>		FLOAT	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	1.0	</Default>
+			<Persistent>	true	</Persistent>
+		</modelScale>
+	</Properties>
+
+	<ClientMethods>
+		<CLIENT_OnSetModelPart>
+			<Arg>	INT8	</Arg>
+			<Arg>	STRING	</Arg>
+		</CLIENT_OnSetModelPart>
+		<CLIENT_OnSetModelExtPart>
+			<Arg>	INT8	</Arg>
+			<Arg>	STRING	</Arg>
+		</CLIENT_OnSetModelExtPart>
+	</ClientMethods>
+
+	<BaseMethods>
+		<destroySelf/>
+	</BaseMethods>
+
+	<CellMethods>
+		<destroyCellByBase/>
+	</CellMethods>
+
+</root>

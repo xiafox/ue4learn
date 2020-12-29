@@ -1,0 +1,106 @@
+<root>
+	<Interfaces>
+		<Interface>	GameEntity		</Interface>
+		<Interface>	TestInterface		</Interface>
+		<Interface>	RoleSpaceInterface	</Interface>
+		<Interface>	StateInterface		</Interface>
+		<Interface>	CombatInterface		</Interface>
+	</Interfaces>
+
+	<Volatile>
+		<position/>
+		<yaw/>
+		<pitch> 20 </pitch>
+		<optimized>1 </optimized>
+	</Volatile>
+
+	<Properties>
+		<playerName>
+			<Type>			UNICODE		</Type>
+			<Flags>			ALL_CLIENTS	</Flags>
+			<Persistent>		true		</Persistent>
+			<DatabaseLength>	255		</DatabaseLength>
+			<Index> 		UNIQUE		</Index>
+		</playerName>
+		<playerDBID>
+			<Type>		DBID		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+			<Default>	0			</Default>
+			<Persistent>	false			</Persistent>
+		</playerDBID>
+		<accountEntity>		<!-- 记录它的帐号entity,用于shutdown的时候通知或把控制权转交 -->
+			<Type>		ENTITYCALL		</Type>
+			<Flags>		BASE			</Flags>
+			<Default>	0			</Default>
+			<Persistent>	false			</Persistent>
+		</accountEntity>
+		<parentDBID><!-- 角色账号DBID -->
+			<Type>		INT64			</Type>
+			<Flags>		BASE			</Flags>
+			<Default>	0			</Default>
+			<Persistent>	true			</Persistent>
+		</parentDBID>
+		<roleState>		<!-- 角色的状态 目前只有删除状态 0 正常 1 删除 -->
+			<Type>		UINT8			</Type>
+			<Flags>		BASE			</Flags>
+			<Default>	0			</Default>
+			<Persistent>	true			</Persistent>
+		</roleState>
+		<createTime>  	<!-- 角色的创建时间 -->
+			<Type>		UINT64			</Type>
+			<Flags>		BASE			</Flags>
+			<Default>	0			</Default>
+			<Persistent>	true			</Persistent>
+		</createTime>
+		<deleteTime>		<!-- 角色的删除时间 -->
+			<Type>		UINT64			</Type>
+			<Flags>		BASE			</Flags>
+			<Default>	0			</Default>
+			<Persistent>	true			</Persistent>
+		</deleteTime>
+		<camp>
+			<Type>		INT32			</Type>
+			<Flags>		ALL_CLIENTS		</Flags>
+			<Default>	1			</Default>
+			<Persistent>	true			</Persistent>
+		</camp>
+		<gender>
+			<Type>		INT32			</Type>
+			<Flags>		ALL_CLIENTS			</Flags>
+			<Default>	1			</Default>
+			<Persistent>	true			</Persistent>
+		</gender>
+		<profession>
+			<Type>		INT32			</Type>
+			<Flags>		ALL_CLIENTS		</Flags>
+			<Default>	1			</Default>
+			<Persistent>	true			</Persistent>
+		</profession>
+	</Properties>
+
+	<ClientMethods>
+		<CLIENT_OnRepJumpState>
+			<Arg>	UINT8		</Arg>	<!-- 跳跃状态 -->
+			<Arg>	VECTOR3		</Arg>	<!-- 速度 -->
+			<Arg>	VECTOR3		</Arg>	<!-- 位置 -->
+		</CLIENT_OnRepJumpState>
+	</ClientMethods>
+
+	<BaseMethods>
+		<BASE_logoff>
+			<Exposed/>
+		</BASE_logoff>
+		<BASE_logout>
+			<Exposed/>
+		</BASE_logout>
+	</BaseMethods>
+
+	<CellMethods>
+		<CELL_changeRoleJumpState>
+			<Exposed/>
+			<Arg>	UINT8		</Arg>	<!-- 跳跃状态 -->
+			<Arg>	VECTOR3		</Arg>	<!-- 速度 -->
+			<Arg>	VECTOR3		</Arg>	<!-- 位置 -->
+		</CELL_changeRoleJumpState>
+	</CellMethods>
+</root>

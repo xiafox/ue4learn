@@ -1,0 +1,9 @@
+BackToSelectRoleLoadingStatus  与 SelectRoleLoadingStatus
+
+其实有点相似，但是又有不同，BackToSelectRoleLoadingStatus  需要考虑 界面数据的清理，管理器的一些状态数据的回复。
+
+后续，如果我们找到一种更好的方式，让界面数据和管理器数据可以更好的清理，则 BackToSelectRoleLoadingStatus   去掉。
+
+目前我们先繁琐一点， 表示我们对各个情况都是有考虑的。
+
+等后续确实觉得不需要，我们再精简。

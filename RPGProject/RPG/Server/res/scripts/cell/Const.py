@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+
+#----------------------space cellapp data key----------------
+CELLAPP_DATA_SPACE_KEY = "SPACE_BASE.%s"
+GET_SPACE_CELLAPP_KEY = lambda spaceID:CELLAPP_DATA_SPACE_KEY%spaceID 
+
+#----------------------space data----------------------
+SPACE_DATA_SCRIPT_ID 	= "SPACE_SCRIPT_ID"
+SPACE_DATA_SPACE_ID		= "SPACE_ID"
+SPACE_DATA_BELONG_TYPE	= "SPACE_DATA_BELONG_TYPE"
+SPACE_DATA_SPACE_TYPE	= "SPACE_TYPE"
+SPACE_DATA_LINE_NUMBER	= "SPACE_DATA_LINE_NUMBER"
+SPACE_DATA_MAX_LINE_NUMBER = "SPACE_DATA_MAX_LINE_NUMBER"

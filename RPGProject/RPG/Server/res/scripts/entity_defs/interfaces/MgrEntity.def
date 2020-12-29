@@ -1,0 +1,17 @@
+<root>
+	<Interfaces>
+		<Interface> 	GameEntity	</Interface>
+	</Interfaces>
+
+	<Properties>
+		<mgrName>
+			<Type>			STRING		</Type>
+			<Flags>			BASE		</Flags>
+			<Persistent>		true		</Persistent>
+			<Index> 		UNIQUE		</Index>
+			<DatabaseLength>	255		</DatabaseLength>
+		</mgrName>
+	</Properties>
+	<BaseMethods>
+	</BaseMethods>
+</root>

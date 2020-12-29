@@ -1,0 +1,51 @@
+<root>
+	<Properties>
+		<spaceScriptID>
+			<Type>		SCRIPT_ID		</Type>
+			<Flags>		OWN_CLIENT		</Flags>
+			<Default>	L_TestMap		</Default>
+			<DatabaseLength>255		</DatabaseLength>
+			<Persistent>	true			</Persistent>
+		</spaceScriptID>
+		<spaceBelongType>
+			<Type>		INT32			</Type>
+			<Flags>		CELL_PRIVATE		</Flags>
+			<Default>	0			</Default>
+			<Persistent>	true			</Persistent>
+		</spaceBelongType>
+		<isTeleporting>
+			<Type>			BOOL			</Type>
+			<Flags>			CELL_PRIVATE	</Flags>
+			<Persistent>		false		</Persistent>
+		</isTeleporting>
+	</Properties>
+	<ClientMethods>
+		<CLIENT_OnEnterSpaceNotify>
+			<Arg>		STRING			</Arg>
+			<Arg>		INT32			</Arg>
+		</CLIENT_OnEnterSpaceNotify>
+		<CLIENT_OnLeaveSpaceNotify/>
+	</ClientMethods>
+	<BaseMethods>
+		<createCellFromSpace>
+			<Arg>		CELL_ENTITYCALL		</Arg>
+		</createCellFromSpace>
+	</BaseMethods>
+	<CellMethods>
+		<onLoginSpaceSuccess/>
+		<doGotoSpace>
+			<Arg>		SCRIPT_ID		</Arg>
+			<Arg>		BASE_ENTITYCALL		</Arg>
+			<Arg>		POSITION		</Arg>
+			<Arg>		DIRECTION		</Arg>
+			<Arg>		PYTHON_DICT		</Arg>
+		</doGotoSpace>
+		<CELL_GoToSpace>
+			<Exposed/>
+			<Arg>		SCRIPT_ID		</Arg>
+			<Arg>		POSITION		</Arg>
+			<Arg>		DIRECTION		</Arg>
+		</CELL_GoToSpace>
+		<gotoExitSpacePos/>
+	</CellMethods>
+</root>

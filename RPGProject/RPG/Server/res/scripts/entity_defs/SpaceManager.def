@@ -1,0 +1,32 @@
+<root>
+	<Interfaces>
+		<Interface>	MgrEntity	</Interface>
+	</Interfaces>
+	<Properties>
+	</Properties>
+	<BaseMethods>
+		<onLoadOver>
+			<Arg>		SCRIPT_ID			</Arg>
+		</onLoadOver>
+		<roleLogin>
+			<Arg>	SCRIPT_ID	</Arg>
+			<Arg>	BASE_ENTITYCALL	</Arg>
+			<Arg>	PYTHON_DICT	</Arg>
+		</roleLogin>
+		<gotoSpace>
+			<Arg>	SCRIPT_ID	</Arg>
+			<Arg>	BASE_ENTITYCALL	</Arg>
+			<Arg>	POSITION	</Arg>
+			<Arg>	DIRECTION	</Arg>
+			<Arg>	PYTHON_DICT	</Arg>
+		</gotoSpace>
+		<onSpaceGetCell>
+			<Arg>	SCRIPT_ID	</Arg>
+			<Arg>	UINT32	</Arg>
+		</onSpaceGetCell>
+		<onSpaceLoseCell>
+			<Arg>	SCRIPT_ID	</Arg>
+			<Arg>	UINT32	</Arg>
+		</onSpaceLoseCell>
+	</BaseMethods>
+</root>

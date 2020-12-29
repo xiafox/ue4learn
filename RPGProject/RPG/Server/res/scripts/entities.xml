@@ -1,0 +1,17 @@
+<root>
+	<!--
+		实体注册文件(<你的资产库>/scripts/entities.xml)
+		详细说明请参考：http://kbengine.org/cn/docs/configuration/entities.html
+					http://www.kbengine.org/cn/docs/programming/entitydef.html
+	-->
+
+	<!-- <Avatar/> -->
+	<Account hasBase="true" hasClient="true" />
+	<Role hasCell="true" hasBase="true" hasClient="true" />
+	<BaseAppEntity hasCell="false" hasBase="true" hasClient="false" />
+	<Monster hasCell="true" hasBase="false" hasClient="true" />
+	<NPC hasCell="true" hasBase="false" hasClient="true" />
+	<ServerGameStartUpMgr hasBase = "true" />
+	<SpaceManager hasBase="true"/>
+	<SpaceMultiLine hasBase="true" hasCell="true" />
+</root>

@@ -1,0 +1,63 @@
+<root>
+	
+	<Interfaces>
+		<Interface> 	HasCellEntity	</Interface>
+	</Interfaces>
+
+	<Properties>
+		<scriptID>
+			<Type>		SCRIPT_ID			</Type>
+			<Flags>		CELL_PUBLIC			</Flags>
+			<Persistent>	false				</Persistent>
+		</scriptID>
+		<spaceNumber>	<!-- 空间编号 -->
+			<Type>		UINT32			</Type>
+			<Flags>		CELL_PUBLIC			</Flags>
+			<Persistent>	false				</Persistent>
+		</spaceNumber>
+		<belongType>
+			<Type>		INT32				</Type>
+			<Flags>		CELL_PRIVATE			</Flags>
+			<Persistent>	false				</Persistent>
+		</belongType>
+		<spaceKey>
+			<Type>		STRING				</Type>
+			<Flags>		CELL_PRIVATE			</Flags>
+			<Persistent>	false				</Persistent>
+		</spaceKey>
+		<createArgs>!-- 创建空间传的字典打包的参数 -->
+			<Type>		PYTHON_DICT			</Type>
+			<Flags>		CELL_PRIVATE			</Flags>
+			<Persistent>	false				</Persistent>
+		</createArgs>
+	</Properties>
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+		<loginPlayer>
+			<Arg>		BASE_ENTITYCALL		</Arg>
+		</loginPlayer>
+		<teleportEntity>
+			<Arg>		BASE_ENTITYCALL		</Arg>
+			<Arg>		POSITION		</Arg>
+			<Arg>		DIRECTION		</Arg>
+			<Arg>		PYTHON_DICT		</Arg>
+		</teleportEntity>
+	</BaseMethods>
+
+	<CellMethods>
+		<teleportEntity>
+			<Arg>		BASE_ENTITYCALL		</Arg>
+			<Arg>		POSITION		</Arg>
+			<Arg>		DIRECTION		</Arg>
+			<Arg>		PYTHON_DICT		</Arg>
+		</teleportEntity>
+		<closeSpace/>
+		<onSpaceDataChanged>
+			<Arg>	SPACE_ID	</Arg>
+			<Arg>	STRING		</Arg>
+			<Arg>	STRING		</Arg>
+		</onSpaceDataChanged>
+	</CellMethods>
+</root>

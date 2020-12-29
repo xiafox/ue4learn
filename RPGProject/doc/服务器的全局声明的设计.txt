@@ -1,0 +1,4 @@
+在Base上的全局常量,枚举,数据定义 放到  base/Const.py
+在Cell上的全局常量,枚举,数据定义 放到  cell/Const.py
+
+在整个服务器的全局常量,枚举,数据定义 放到 common/RpgConst.py

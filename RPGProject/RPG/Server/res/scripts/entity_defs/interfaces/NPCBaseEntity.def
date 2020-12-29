@@ -1,0 +1,22 @@
+<root>
+	
+	<Interfaces>
+		<Interface> 	GameEntity	</Interface>
+	</Interfaces>
+
+	<Properties>
+		<scriptID>
+			<Type>			SCRIPT_ID		</Type>
+			<Flags>			ALL_CLIENTS		</Flags>
+			<Persistent>		false			</Persistent>
+		</scriptID>
+	</Properties>
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+	</BaseMethods>
+
+	<CellMethods>	
+	</CellMethods>
+</root>
